@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#183c32">
+    <title>Meeting ledger | Event Sync</title>
+    <link rel="stylesheet" href="/app.css">
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Primary navigation">
+        <a class="brand" href="/" aria-label="Event Sync home">
+          <span class="brand-mark" aria-hidden="true">E</span>
+          <span>event<span class="brand-light">sync</span></span>
+        </a>
+        <div class="workspace-label">WORKSPACE</div>
+        <nav>
+          <a class="nav-link is-active" href="/" aria-current="page">
+            <span class="nav-icon" aria-hidden="true">◫</span>
+            Meetings
+            <span class="nav-count" id="nav-count">—</span>
+          </a>
+        </nav>
+        <div class="sidebar-bottom">
+          <span class="connection-dot" aria-hidden="true"></span>
+          <span>Both sources connected</span>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <div class="breadcrumb">Workspace <span>/</span> Meetings</div>
+          <div class="sync-status"><span class="status-pulse"></span>Synced from 2 sources</div>
+        </header>
+
+        <section class="page-heading" aria-labelledby="page-title">
+          <div>
+            <p class="eyebrow">EVENT OPERATIONS <span id="updated-at"></span></p>
+            <h1 id="page-title">Meeting ledger<span class="heading-period">.</span></h1>
+            <p class="page-subtitle">A single view across CRM and calendar records.</p>
+          </div>
+          <button class="refresh-button" id="refresh-button" type="button" title="Refresh meeting data">
+            <span aria-hidden="true">↻</span><span class="refresh-label">Refresh</span>
+          </button>
+        </section>
+
+        <section class="metric-strip" aria-label="Meeting summary">
+          <div class="metric">
+            <span class="metric-label">TOTAL RECORDS</span>
+            <strong id="metric-total">—</strong>
+            <span class="metric-note">across both sources</span>
+          </div>
+          <div class="metric">
+            <span class="metric-label">RECONCILED</span>
+            <strong id="metric-matched">—</strong>
+            <span class="metric-note"><span class="metric-mark mark-green"></span>linked across sources</span>
+          </div>
+          <div class="metric">
+            <span class="metric-label">SOURCE ONLY</span>
+            <strong id="metric-source-only">—</strong>
+            <span class="metric-note"><span class="metric-mark mark-amber"></span>found in one source</span>
+          </div>
+          <div class="metric">
+            <span class="metric-label">NEEDS REVIEW</span>
+            <strong id="metric-review">—</strong>
+            <span class="metric-note"><span class="metric-mark mark-coral"></span>conflicts or data warnings</span>
+          </div>
+        </section>
+
+        <section class="ledger-section" aria-labelledby="ledger-title">
+          <div class="ledger-heading">
+            <div>
+              <h2 id="ledger-title">All meetings</h2>
+              <p id="results-count" class="results-count" aria-live="polite">Loading records…</p>
+            </div>
+            <label class="search-box">
+              <span class="search-icon" aria-hidden="true">⌕</span>
+              <span class="sr-only">Search meetings</span>
+              <input id="search-input" type="search" placeholder="Search client, title, owner…" autocomplete="off">
+              <kbd>/</kbd>
+            </label>
+          </div>
+
+          <div class="filter-row" role="toolbar" aria-label="Filter meetings">
+            <div class="filter-tabs" role="group" aria-label="Meeting status">
+              <button class="filter-tab is-selected" type="button" data-filter="all" aria-pressed="true">All <span id="count-all">—</span></button>
+              <button class="filter-tab" type="button" data-filter="matched" aria-pressed="false">Reconciled <span id="count-matched">—</span></button>
+              <button class="filter-tab" type="button" data-filter="source-only" aria-pressed="false">Source only <span id="count-source-only">—</span></button>
+              <button class="filter-tab" type="button" data-filter="review" aria-pressed="false">Needs review <span id="count-review">—</span></button>
+            </div>
+            <label class="sort-control">
+              <span>Sort by</span>
+              <select id="sort-select" aria-label="Sort meetings">
+                <option value="date-asc">Date, earliest</option>
+                <option value="date-desc">Date, latest</option>
+                <option value="title">Meeting name</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">MEETING</th>
+                  <th scope="col">DATE &amp; TIME</th>
+                  <th scope="col">RELATIONSHIP</th>
+                  <th scope="col">SOURCES</th>
+                  <th scope="col"><span class="sr-only">Review state</span></th>
+                  <th scope="col"><span class="sr-only">Details</span></th>
+                </tr>
+              </thead>
+              <tbody id="meeting-rows">
+                <tr><td class="loading-cell" colspan="6"><span class="loading-mark"></span>Loading meeting records</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="empty-state" id="empty-state" hidden>
+            <span class="empty-symbol" aria-hidden="true">⌕</span>
+            <strong>No meetings found</strong>
+            <p>Try a different search or filter.</p>
+            <button type="button" id="clear-filters">Clear filters</button>
+          </div>
+        </section>
+        <footer class="page-footer">
+          <span>EVENT SYNC SERVICE</span>
+          <span id="source-counts">CRM — <span aria-hidden="true">·</span> Calendar —</span>
+        </footer>
+      </main>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>

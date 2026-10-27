@@ -1,0 +1,372 @@
+[
+  {
+    "event_id": "CAL-A1",
+    "title": "Q1 Portfolio Review - Meridian Capital",
+    "organizer": "sarah.chen@firma.com",
+    "attendees": [
+      "sarah.chen@firma.com",
+      "david.park@meridiancap.com"
+    ],
+    "start_time": "2025-03-10T14:00:00",
+    "end_time": "2025-03-10T15:30:00",
+    "location": "Conference Room B",
+    "description": "Quarterly review of portfolio allocation and performance.",
+    "is_recurring": false,
+    "status": "confirmed",
+    "created_at": "2025-02-27T10:00:00Z"
+  },
+  {
+    "event_id": "CAL-A2",
+    "title": "Summit Advisors - Portfolio Discussion",
+    "organizer": "sarah.chen@firma.com",
+    "attendees": [
+      "sarah.chen@firma.com",
+      "mark.johnson@summitadv.com",
+      "anna.lee@summitadv.com"
+    ],
+    "start_time": "2025-03-12T10:00:00",
+    "end_time": "2025-03-12T11:00:00",
+    "location": "Zoom - https://zoom.us/j/98765432100",
+    "description": "Portfolio walkthrough with Summit team.",
+    "is_recurring": false,
+    "status": "confirmed",
+    "created_at": "2025-02-28T15:45:00Z"
+  },
+  {
+    "event_id": "CAL-A3",
+    "title": "Weekly Team Sync",
+    "organizer": "sarah.chen@firma.com",
+    "attendees": [
+      "sarah.chen@firma.com",
+      "james.wu@firma.com",
+      "priya.sharma@firma.com",
+      "michael.ross@firma.com"
+    ],
+    "start_time": "2025-03-11T09:00:00",
+    "end_time": "2025-03-11T09:30:00",
+    "location": "Virtual - Microsoft Teams",
+    "description": "Standing weekly sync.",
+    "is_recurring": true,
+    "status": "confirmed",
+    "created_at": "2025-01-06T08:00:00Z"
+  },
+  {
+    "event_id": "CAL-A4",
+    "title": "Crestview Holdings - DD Meeting",
+    "organizer": "sarah.chen@firma.com",
+    "attendees": [
+      "sarah.chen@firma.com",
+      "patricia.langley@crestviewhold.com",
+      "robert.kim@firma.com"
+    ],
+    "start_time": "2025-03-13T19:00:00Z",
+    "end_time": "2025-03-13T20:30:00Z",
+    "location": "DC Office - Main Conference Room",
+    "description": "Due diligence deep-dive. Fund VII materials pre-circulated.",
+    "is_recurring": false,
+    "status": "confirmed",
+    "created_at": "2025-03-04T12:00:00Z"
+  },
+  {
+    "event_id": "CAL-A5",
+    "title": "Investor Update - Pinnacle",
+    "organizer": "james.wu@firma.com",
+    "attendees": [
+      "james.wu@firma.com",
+      "kevin.obrien@pinnaclegp.com"
+    ],
+    "start_time": "2025-03-17T11:00:00",
+    "end_time": "2025-03-17T12:00:00",
+    "location": "Boston Office - Room 301",
+    "description": "Quarterly investor update for Pinnacle Group.",
+    "is_recurring": false,
+    "status": "confirmed",
+    "created_at": "2025-03-02T14:30:00Z"
+  },
+  {
+    "event_id": "CAL-A6",
+    "title": "Pinnacle Group - Q1 Update",
+    "organizer": "james.wu@firma.com",
+    "attendees": [
+      "james.wu@firma.com",
+      "kevin.obrien@pinnaclegp.com",
+      "sandra.mills@pinnaclegp.com"
+    ],
+    "start_time": "2025-03-17T11:30:00",
+    "end_time": "2025-03-17T12:30:00",
+    "location": "Boston Office",
+    "description": "Q1 update with Pinnacle Group. Sandra Mills (CIO) attending.",
+    "is_recurring": false,
+    "status": "confirmed",
+    "created_at": "2025-03-10T09:15:00Z"
+  },
+  {
+    "event_id": "CAL-A7",
+    "title": "Internal Pipeline Review",
+    "organizer": "sarah.chen@firma.com",
+    "attendees": [
+      "sarah.chen@firma.com",
+      "james.wu@firma.com",
+      "priya.sharma@firma.com"
+    ],
+    "start_time": "2025-03-14T16:00:00",
+    "end_time": "2025-03-14T17:00:00",
+    "location": "HQ - Room 4A",
+    "description": "Review active pipeline and upcoming client meetings.",
+    "is_recurring": true,
+    "status": "confirmed",
+    "created_at": "2025-01-15T10:05:00Z"
+  },
+  {
+    "event_id": "CAL-A8",
+    "title": "Meridian Capital - Follow-up",
+    "organizer": "sarah.chen@firma.com",
+    "attendees": [
+      "sarah.chen@firma.com",
+      "david.park@meridiancap.com"
+    ],
+    "start_time": "2025-03-18T15:00:00",
+    "end_time": "2025-03-18T15:30:00",
+    "location": "Zoom",
+    "description": "Follow-up re: fee schedule and allocation changes discussed in Q1 review.",
+    "is_recurring": false,
+    "status": "confirmed",
+    "created_at": "2025-03-11T09:45:00Z"
+  },
+  {
+    "event_id": "CAL-A9",
+    "title": "Atlas Ventures Lunch",
+    "organizer": "james.wu@firma.com",
+    "attendees": [
+      "james.wu@firma.com",
+      "lisa.tran@atlasvc.com"
+    ],
+    "start_time": "2025-03-15T12:00:00",
+    "end_time": "2025-03-15T13:30:00",
+    "location": "The Capital Grille - Georgetown",
+    "description": "Lunch with Lisa Tran. Exploring infrastructure fund interest.",
+    "is_recurring": false,
+    "status": "confirmed",
+    "created_at": "2025-03-07T16:00:00Z"
+  },
+  {
+    "event_id": "CAL-A10",
+    "title": "Board Prep - Q1 Materials Review",
+    "organizer": "sarah.chen@firma.com",
+    "attendees": [
+      "sarah.chen@firma.com",
+      "james.wu@firma.com",
+      "michael.ross@firma.com",
+      "diane.foster@firma.com"
+    ],
+    "start_time": "2025-03-19T09:00:00",
+    "end_time": "2025-03-19T10:30:00",
+    "location": "HQ - Boardroom",
+    "description": "Review and finalize Q1 board presentation materials.",
+    "is_recurring": false,
+    "status": "confirmed",
+    "created_at": "2025-02-28T11:00:00Z"
+  },
+  {
+    "event_id": "CAL-A11",
+    "title": "Client Reception",
+    "organizer": "priya.sharma@firma.com",
+    "attendees": [],
+    "start_time": "2025-03-14T18:00:00",
+    "end_time": "2025-03-14T20:00",
+    "location": null,
+    "description": null,
+    "is_recurring": false,
+    "status": "tentative",
+    "created_at": "2025-03-13T22:10:00Z"
+  },
+  {
+    "event_id": "CAL-A12",
+    "title": "Horizon Wealth - Year-End Review",
+    "organizer": "james.wu@firma.com",
+    "attendees": [
+      "james.wu@firma.com",
+      "elena.marcos@horizonwp.com"
+    ],
+    "start_time": "2025-03-21T09:00:00",
+    "end_time": "2025-03-21T10:30:00",
+    "location": "NYC Office - 12th Floor",
+    "description": "Annual review of allocation strategy and alternatives exposure.",
+    "is_recurring": false,
+    "status": "confirmed",
+    "created_at": "2025-03-06T14:20:00Z"
+  },
+  {
+    "event_id": "CAL-A13",
+    "title": "Granite Point - Co-Invest Discussion",
+    "organizer": "sarah.chen@firma.com",
+    "attendees": [
+      "sarah.chen@firma.com",
+      "thomas.grant@granitepointcap.com"
+    ],
+    "start_time": "2025-03-21T14:00:00",
+    "end_time": "2025-03-21T15:00:00",
+    "location": "Zoom - https://zoom.us/j/11223344",
+    "description": "Co-investment opportunity walkthrough for Fund VII deal.",
+    "is_recurring": false,
+    "status": "confirmed",
+    "created_at": "2025-03-11T16:30:00Z"
+  },
+  {
+    "event_id": "CAL-A14",
+    "title": "LPAC Prep Working Session",
+    "organizer": "priya.sharma@firma.com",
+    "attendees": [
+      "sarah.chen@firma.com",
+      "james.wu@firma.com",
+      "priya.sharma@firma.com",
+      "michael.ross@firma.com"
+    ],
+    "start_time": "2025-03-24T10:00:00",
+    "end_time": "2025-03-24T12:00:00",
+    "location": "HQ - Boardroom",
+    "description": "Prep session for LP Advisory Committee meeting. Priya coordinating logistics.",
+    "is_recurring": false,
+    "status": "confirmed",
+    "created_at": "2025-03-14T11:00:00Z"
+  },
+  {
+    "event_id": "CAL-A15",
+    "title": "Michael Reeves - Quick Sync",
+    "organizer": "james.wu@firma.com",
+    "attendees": [
+      "james.wu@firma.com",
+      "michael.reeves@evergreencap.com"
+    ],
+    "start_time": "2025-03-25T08:30:00",
+    "end_time": "2025-03-25T08:45:00",
+    "location": null,
+    "description": "Capital call timing discussion.",
+    "is_recurring": false,
+    "status": "confirmed",
+    "created_at": "2025-03-19T17:00:00Z"
+  },
+  {
+    "event_id": "CAL-A16",
+    "title": "Atlas Ventures - Infrastructure Deep Dive",
+    "organizer": "james.wu@firma.com",
+    "attendees": [
+      "james.wu@firma.com",
+      "lisa.tran@atlasvc.com",
+      "raj.patel[at]atlasvc.com"
+    ],
+    "start_time": "2025-03-26T10:00:00",
+    "end_time": "2025-03-26T11:30:00",
+    "location": "Conference Room A",
+    "description": "Formal infrastructure fund presentation. Raj Patel (CIO) attending.",
+    "is_recurring": false,
+    "status": "confirmed",
+    "created_at": "2025-03-15T10:00:00Z"
+  },
+  {
+    "event_id": "CAL-A17",
+    "title": "ESG + Compliance Review",
+    "organizer": "sarah.chen@firma.com",
+    "attendees": [
+      "sarah.chen@firma.com",
+      "karen.white@redwoodinst.com"
+    ],
+    "start_time": "2025-03-27T15:00:00",
+    "end_time": "2025-03-27T16:00:00",
+    "location": "Microsoft Teams",
+    "description": "Walk through ESG reporting framework and compliance requirements.",
+    "is_recurring": false,
+    "status": "confirmed",
+    "created_at": "2025-03-20T08:30:00Z"
+  },
+  {
+    "event_id": "CAL-A18",
+    "title": "Weekly Team Sync",
+    "organizer": "sarah.chen@firma.com",
+    "attendees": [
+      "sarah.chen@firma.com",
+      "james.wu@firma.com",
+      "priya.sharma@firma.com",
+      "michael.ross@firma.com"
+    ],
+    "start_time": "2025-03-18T09:00:00",
+    "end_time": "2025-03-18T09:30:00",
+    "location": "Virtual - Microsoft Teams",
+    "description": "Standing weekly sync.",
+    "is_recurring": true,
+    "status": "confirmed",
+    "created_at": "2025-01-06T08:00:00Z"
+  },
+  {
+    "event_id": "CAL-A19",
+    "title": "Fund VII Roadshow Prep",
+    "organizer": "sarah.chen@firma.com",
+    "attendees": [
+      "sarah.chen@firma.com",
+      "james.wu@firma.com",
+      "priya.sharma@firma.com"
+    ],
+    "start_time": "2025-03-28T14:00:00",
+    "end_time": "2025-03-28T16:00:00",
+    "location": "HQ - Room 4A",
+    "description": "Finalize roadshow materials and talking points for NYC meetings.",
+    "is_recurring": false,
+    "status": "confirmed",
+    "created_at": "2025-03-20T12:00:00Z"
+  },
+  {
+    "event_id": "CAL-A20",
+    "title": "Fund VII Closing Dinner",
+    "organizer": "james.wu@firma.com",
+    "attendees": [
+      "james.wu@firma.com",
+      "sarah.chen@firma.com",
+      "kevin.obrien@pinnaclegp.com",
+      "elena.marcos@horizonwp.com",
+      "thomas.grant@granitepointcap.com",
+      "external-guests"
+    ],
+    "start_time": "2025-03-28T19:00:00",
+    "end_time": "2025-03-28T21:30:00",
+    "location": "The Palm Restaurant",
+    "description": "Celebratory dinner for Fund VII final close.",
+    "is_recurring": false,
+    "status": "confirmed",
+    "created_at": "2025-03-09T11:00:00Z"
+  },
+  {
+    "event_id": "CAL-A21",
+    "title": "Crestview Follow-up Call",
+    "organizer": "sarah.chen@firma.com",
+    "attendees": [
+      "sarah.chen@firma.com",
+      "patricia.langley@crestviewhold.com"
+    ],
+    "start_time": "2025-03-25T16:30:00",
+    "end_time": "2025-03-25T17:00:00",
+    "location": "Zoom",
+    "description": "Follow-up on due diligence questions. Side letter discussion.",
+    "is_recurring": false,
+    "status": "confirmed",
+    "created_at": "2025-03-16T14:45:00Z"
+  },
+  {
+    "event_id": "CAL-A22",
+    "title": "QBR - Q1 Wrap",
+    "organizer": "sarah.chen@firma.com",
+    "attendees": [
+      "sarah.chen@firma.com",
+      "james.wu@firma.com",
+      "priya.sharma@firma.com",
+      "michael.ross@firma.com",
+      "diane.foster@firma.com"
+    ],
+    "start_time": "2025-04-01T14:00:00",
+    "end_time": "2025-04-01T16:00:00",
+    "location": "HQ - Large Conference Room",
+    "description": "Q1 quarterly business review. Pipeline, AUM, retention metrics.",
+    "is_recurring": false,
+    "status": "confirmed",
+    "created_at": "2025-03-04T09:30:00Z"
+  }
+]
