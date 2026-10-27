@@ -45,19 +45,33 @@ A meeting contains a stable ID, match status, the original CRM and/or calendar r
 
 ## Reconciliation approach
 
-The source files do not share IDs, so the service uses explicit rules rather than assuming records with a similar name are the same event.
+1. **Date Format:** CRM dates in `YYYY-MM-DD` format are accepted. Dates in `MM-DD/YYYY` format are also accepted if valid.
+          The original date is kept, and a warning is added when the format is changed.
 
-1. CRM dates in ISO `YYYY-MM-DD` form are accepted. The observed `MM-DD/YYYY` form is also parsed when it represents a valid date. The original source record is preserved and a warning notes that normalization occurred.
-2. A CRM record and calendar record must have the same parsed calendar date to be considered a match.
-3. Party evidence is checked by comparing the CRM client's name to a calendar attendee's email local part. Topic similarity is calculated from normalized words in the subject, company, notes, title, and description; common filler words are ignored.
-4. With a matching client attendee, a candidate is accepted if either its topic similarity reaches `0.3` or its start time is within 60 minutes. Without a matching attendee, both topic similarity of at least `0.3` and an exact start-time match are required.
-5. Candidate pairs are ranked by attendee, topic, and time signals. A greedy one-to-one assignment accepts the highest scoring pairs first; all remaining records stay in the output as source-only rather than being discarded.
-6. Calendar records that share a date, an attendee, similar topic details, and start within 60 minutes are reported as possible duplicate candidates. They are not merged automatically. This keeps the two Pinnacle entries separate for review.
-7. Conflict detection compares equivalent values, not raw strings. For example, a time-only CRM value is compared with the clock portion of the calendar timestamp, `Completed` is treated like `confirmed`, and room/floor details may be ignored when the underlying venue matches. Subject wording is preserved in source details but not treated as a conflict by itself.
-8. Original source values remain available even when a normalized value is used for matching. Non-ISO dates, malformed attendee emails, substantive field differences, and missing non-internal client identity are surfaced as review information.
+3. **Date Matching:** A CRM record and a calendar record are considered a match only when they have the same date.
 
-These are deterministic heuristics intended for the supplied assessment data, not a universal event identity algorithm. Low-confidence candidates are kept separate rather than silently combined.
+4. **Client and Topic Matching:** The system checks whether the client's name matches an attendee's email name.
+       It also compares meeting subjects, company names, notes, titles, and descriptions to see how closely the topics match. Common words are ignored.
 
+5. **Meeting Match Rules:**
+   - If the client matches an attendee, the meeting is accepted when the topic similarity is at least `0.3` (30%) or the start times are within 60 minutes.
+   - If the client does not match an attendee, the topic similarity must be at least `0.3` and the start times must match exactly.
+
+6. **Best Match Selection:** The system ranks meetings based on client, topic, and time similarities.
+        It selects the strongest matches first, making sure each record is matched only once. Unmatched records are kept separately instead of being deleted.
+
+7. **Duplicate Meeting Check:** Calendar meetings with the same date, attendee, similar topic, and start times within 60 minutes are flagged as possible duplicates.
+     They are not automatically combined. For example, the two Pinnacle meetings remain separate for review.
+
+8. **Conflict Detection:** The system compares the actual meaning of values rather than just their text. For example:
+   - `Completed` and `Confirmed` are treated as the same status.
+   - CRM meeting times are compared with the time portion of calendar entries.
+   - Different room or floor details are ignored if the main meeting location is the same.
+   - Different subject wording alone is not considered a conflict.
+
+9. **Original Data and Warnings:** All original CRM and calendar values are preserved, even when the system standardizes them for matching.
+         Issues such as unusual date formats, invalid attendee emails, important data differences, or missing client information are flagged for review.
+   
 ## Dashboard
 
 The dashboard at `/` provides:
@@ -95,7 +109,7 @@ AI assistance was used to interpret the open-ended requirements, map edge cases 
 
 ## Time spent
 
-Inspect the data and decide matching rules: 1 hours ( check both files and understand layout used AI to find descripancies )
-Build ingestion, reconciliation, and API: 2 hours ( Create Node server , read file and send to reconsile event used some datacamp and w3schools help and some AI) 
-Build the dashboard: 2 hours ( used some datacamp and w3schools help and some AI)
-Test, document decisions, and polish the README: 1 hours  ( used some AI help )
+- Inspect the data and decide matching rules: 1 hours ( check both files and understand layout used AI to find descripancies )
+- Build ingestion, reconciliation, and API: 2 hours ( Create Node server , read file and send to reconsile event used some datacamp and w3schools help and some AI) 
+- Build the dashboard: 2 hours ( used some datacamp and w3schools help and some AI)
+- Test, document decisions, and polish the README: 1 hours  ( used some AI help )
