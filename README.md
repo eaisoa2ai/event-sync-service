@@ -29,6 +29,14 @@ npm test
 
 The tests cover clear cross-source matches, source-only records, malformed values, substantive conflicts, and the possible Pinnacle calendar duplicate.
 
+## Screenshots
+
+### Meeting dashboard
+![Meeting dashboard](screenshots/dashboard.png)
+
+### Conflict details
+![Expanded meeting showing source values and conflicts](screenshots/conflict-details.png)
+
 ## API
 
 All API responses use JSON.
