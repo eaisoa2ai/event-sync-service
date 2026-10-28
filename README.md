@@ -105,7 +105,7 @@ AI_ASSISTANCE.md      AI collaboration and decision notes
 
 ## AI collaboration
 
-AI assistance was used to interpret the open-ended requirements, map edge cases in the supplied data, implement and refine the reconciliation rules and dashboard, and draft the project documentation. The decisions and known limitations are summarized in [AI_ASSISTANCE.md](AI_ASSISTANCE.md). Review the code and documentation before submission and make sure the final account reflects your own understanding.
+AI assistance was used to interpret the open-ended requirements, map edge cases in the supplied data, implement and refine the reconciliation rules and dashboard, and draft the project documentation. 
 
 ## Time spent
 
